@@ -1,0 +1,252 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/*Corpo*/
+body {
+      font-family: Nunito, sans-serif;
+      color:#1c1c1c;
+      background-color: rgb(246,246,244);
+}
+h1, h2, h3 {   
+      font-family: Asap; sans serif;
+      color: #000000;
+}
+.botao {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #191970;
+  font-size: .9em;
+  border-radius: 3px;
+}
+/*navegação*/
+nav {
+   margin-top: 15px;
+   margin-top: 15px;
+   width: 100%;
+   position: fixed;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background-color:rgba(219,224,217,0.4);
+  border-bottom: 0.5px solid;
+  /*box-shadow: 0px 1.5px rgba(219,224,217, 0.9);*/
+
+  border-color: rgba(248,248,248,0.3);
+   
+   
+  label > img {
+  width: 40px;
+  }
+   
+}
+nav > a > img {
+  text-shadow: 1px solid white;
+  margin-top: 8px;
+  margin-left: 2px;
+  margin-right: 0px;
+  margin-bottom: 3px;
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: 800;
+   font-size: 32px;
+   font-family: Yellowtail, serif;
+   border-radius: 10%;
+}
+nav ul {
+ margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+ /* background-color: red;*/
+}   
+nav ul li {
+ 
+  text-align: center;
+  width: 100%;
+ /* border: 1px solid rgba(219,224,217,0.5);*/
+
+}
+nav ul li a {
+  margin: 0px 0px 0px 0px;
+  display: inline-block;
+  padding-top: 8px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 6px;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  border-color: 1px black solid;
+  border-radius: 5%;
+
+  
+}
+nav ul li a:hover {
+  padding-top: 8px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 6px;
+  display: inline-block;
+  width: 100%;
+  text-decoration:dotted;
+  color: white;
+  border-color: 1px #000000 solid;
+  background-color: rgb(218,165,32);
+}
+
+/*Cabeçalho*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/soar-voz.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+   color:rgb(219,224,217);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+ /*filter: blur(0px) brightness(100%) contrast(100%) drop-shadow(3px 3px 1px #ff0000) grayscale(0%) hue-rotate(50deg) invert(0%) opacity(100%) saturate(100%) sepia(0%)*/ 
+ }
+ header h1 {
+  color: #ffffff; 
+ }
+ #sobre {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 10px 10px 20px 20px;
+   background-color: #DBE0D9;
+   color: rgb(200,141,80);
+ }
+ #sobre h2 {
+   color: rgb(200,141,80);
+ }
+#sobre p {
+  margin-bottom: 2.5em;
+  max-width: 1000px;
+  }
+#sobre .botao {
+  background-color: #f1f1f1;
+  color: rgb(200,141,80);
+  }
+/*Serviços*/
+#servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+#servicos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  }
+  #contato a {
+    text-decoration: none;
+    color: rgb(218,165,32);
+    font-size: 12px;
+  }
+#contato h2 {
+  color: rgb(218,165,32);
+}
+/*Rodapé*/
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(246,246,244);
+  color: grey;
+  font-size: 9px;
+  }
+.whatsapp {
+    position: fixed;
+    top: 82%;
+    right: 10%;
+    padding: 10px;
+    z-index: 10000000;
+}
+footer a {
+  text-decoration: none;
+  color: #00ffff;
+}
+@media screen and (min-width: 768px) {
+  /*nav*/
+  nav{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav ul {
+    flex-direction: row;
+    width: 70%;
+  }
+  /*Cabeçalho*/
+  header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+  }
+  #sobre {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+   }
+   /*Serviços*/
+   #servicos {
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     max-width: 1000px;
+     margin: 0 auto;
+    }
+    #servicos h2 {
+      text-align: center;
+      width: 100%;
+   }
+   #servicos div {
+     flex-grow: 1;
+     flex-basis: 150px;
+     padding: 0 10px;
+   }
+   #fotos  {
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+   #fotos h2 {
+     width: 100%
+     text-align: center;
+   }
+   #fotos img {
+     width: 33.3333333%;
+   }
+   /*Contato*/
+   #contato {
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     max-width: 500px;
+     margin: 0 auto;
+   }
+   #contato h2, #contato p {
+     width: 100%;
+   }
+}
